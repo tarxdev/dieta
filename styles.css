@@ -1,0 +1,144 @@
+/* --- BRAND AND VISUALS --- */
+:root {
+    --verde-saude: #2E7D32;
+    --laranja-aconchegante: #F57C00;
+    --azul-confianca: #1565C0;
+    --vermelho-acao: #D32F2F;
+    --neutro-claro: #F5F5F5;
+    --texto-principal: #4A4A4A; /* Cor suavizada para conforto visual */
+    --texto-claro: #FFF;
+    --fundo-pagina: #FFFFFF;
+    --borda-suave: #E0E0E0;
+}
+
+/* --- GLOBAL STYLES & ACCESSIBILITY --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7; /* Aumentado para melhor legibilidade */
+    color: var(--texto-principal);
+    background-color: var(--fundo-pagina);
+    -webkit-font-smoothing: antialiased; /* Melhora a renderização da fonte */
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    background-attachment: fixed; /* Deixa a textura fixa durante a rolagem */
+}
+
+/* ... (O restante do CSS global e do Header continua o mesmo) ... */
+h1, h2, h3 {font-family: 'Inter', sans-serif; font-weight: 700; color: var(--verde-saude);}
+h1 { font-size: 32px; line-height: 1.2; }
+h2 { font-size: 28px; letter-spacing: -0.5px; text-align: center; margin-bottom: 1rem;}
+h3 { font-size: 18px; color: var(--laranja-aconchegante); margin: 0; font-weight: 700;} /* Ajustado para o Acordeão */
+.container {width: 90%; max-width: 1100px; margin: 0 auto; padding: 60px 0;}
+section:nth-of-type(even) {background-color: var(--neutro-claro);}
+.cta-button {display: inline-block; padding: 12px 28px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);}
+.cta-button:hover {transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);}
+.primary-cta {background-color: var(--vermelho-acao); color: var(--texto-claro);}
+.secondary-cta {background-color: var(--fundo-pagina); color: var(--verde-saude); border: 2px solid var(--verde-saude); box-shadow: none;}
+.secondary-cta:hover {background-color: var(--verde-saude); color: var(--texto-claro); box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);}
+.header {background-color: rgba(255, 255, 255, 0.9); backdrop-filter: blur(5px); color: var(--texto-principal); padding: 15px 5%; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--borda-suave);}
+.header .logo {font-size: 24px; font-weight: 700; color: var(--azul-confianca); text-decoration: none;}
+.nav-links {display: none; flex-direction: column; position: absolute; top: 67px; left: 0; width: 100%; background-color: var(--fundo-pagina); box-shadow: 0 10px 10px rgba(0,0,0,0.05);}
+.nav-links.active { display: flex; }
+.nav-links a {color: var(--texto-principal); text-decoration: none; padding: 15px 20px; text-align: center; border-bottom: 1px solid var(--borda-suave); transition: color 0.2s ease;}
+.nav-links a:hover {color: var(--laranja-aconchegante); background-color: #fafafa;}
+.hamburger-menu { display: block; cursor: pointer; }
+.hero {position: relative; text-align: center; padding: 140px 20px 80px 20px; background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.hero::before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.7); z-index: 1;}
+.hero > * {position: relative; z-index: 2;}
+.hero h1 {font-size: 42px; max-width: 700px; margin: 0 auto 15px; text-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+.hero p {font-size: 1.1rem; color: #333; font-weight: 500; margin-bottom: 30px;}
+.hero-ctas {display: flex; flex-direction: column; gap: 15px; align-items: center;}
+.stat-card, .how-it-works-item, .marmita-card, .calculator-wrapper {background: var(--fundo-pagina); border: none; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.stat-card:hover, .how-it-works-item:hover, .marmita-card:hover {transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);}
+.stats-grid, .how-it-works-list {display: grid; gap: 25px; text-align: center; margin-top: 40px;}
+.stat-card .value {font-size: 24px; font-weight: 700; color: var(--laranja-aconchegante);}
+.how-it-works-item {display: flex; align-items: center; gap: 15px; text-align: left;}
+.how-it-works-item i { color: var(--verde-saude); }
+
+
+/* --- CARDÁPIO SECTION E ESTILOS DO ACORDEÃO --- */
+.accordion-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.accordion-item {
+    background: var(--fundo-pagina);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--laranja-aconchegante);
+}
+.accordion-header {
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+.accordion-header .icon {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--verde-saude);
+    transition: transform 0.3s ease;
+}
+.accordion-header.active .icon {
+    transform: rotate(45deg);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease;
+    padding: 0 25px;
+}
+.accordion-content ul {
+    list-style: none;
+    padding-bottom: 20px;
+}
+.accordion-content li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+.accordion-content li:last-child {
+    border-bottom: none;
+}
+.accordion-content li strong {
+    color: var(--verde-saude);
+}
+
+/* ... (O restante do CSS continua o mesmo) ... */
+#lista-compras ul { list-style: none; margin-top: 20px; column-count: 1; }
+#lista-compras li { margin-bottom: 12px; }
+#lista-compras label { cursor: pointer; display: flex; align-items: center; gap: 10px; transition: color 0.2s ease;}
+#lista-compras label:hover { color: var(--verde-saude); }
+#lista-compras input[type="checkbox"] { transform: scale(1.2); }
+#lista-compras input[type="checkbox"]:checked + span { text-decoration: line-through; color: #aaa; }
+.content-section ul { list-style-type: '🌿'; padding-left: 25px; }
+.content-section li { padding-left: 10px; margin-bottom: 10px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 700; }
+.form-group input[type="number"], .form-group select {width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--borda-suave); font-size: 16px; transition: border-color 0.3s ease, box-shadow 0.3s ease;}
+.form-group input[type="number"]:focus {outline: none; border-color: var(--verde-saude); box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);}
+.form-group.gender-group { display: flex; gap: 20px; }
+#tmb-result { margin-top: 25px; padding: 20px; background-color: #e8f5e9; border-left: 5px solid var(--verde-saude); border-radius: 8px; text-align: center; font-size: 18px; }
+#tmb-result.hidden { display: none; }
+.footer { background-color: #333; color: #ccc; text-align: center; padding: 40px 5%; margin-top: 60px; }
+.footer .footer-links { margin: 15px 0; }
+.footer a { color: #fff; margin: 0 10px; text-decoration: none; transition: color 0.2s ease; }
+.footer a:hover { color: var(--laranja-aconchegante); }
+@media (min-width: 768px) { h1 { font-size: 36px; } .hero h1 { font-size: 52px; } .container { padding: 80px 0; } .hamburger-menu { display: none; } .nav-links { display: flex; flex-direction: row; position: static; width: auto; background-color: transparent; box-shadow: none; } .nav-links a { padding: 0 15px; border: none; } .hero-ctas { flex-direction: row; justify-content: center; } .stats-grid { grid-template-columns: repeat(3, 1fr); } .how-it-works-list { grid-template-columns: repeat(3, 1fr); } .marmitas-grid { grid-template-columns: repeat(2, 1fr); } #lista-compras ul { column-count: 2; } }
+@media (min-width: 1024px) { /* .cardapio-grid { grid-template-columns: repeat(3, 1fr); } */ }
+@media print { body { font-size: 12pt; color: #000; background-color: #fff !important; background-image: none !important; } .header, .footer, .hero-ctas, #calculadora-tmb, #dicas, #sobre, .no-print { display: none !important; } section, .container { padding: 0 !important; margin: 20px 0 !important; width: 100%; max-width: 100%; background-color: #fff !important; } .day-card, .marmita-card { border: 1px solid #ccc; box-shadow: none; page-break-inside: avoid; margin-bottom: 20px; } .cardapio-grid, .marmitas-grid, #lista-compras ul { display: block; column-count: 1; } h2 { text-align: left; } }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta Prática e Econômica para Técnica de Enfermagem</title>
+    <meta name="description" content="Cardápio acessível e prático para plantonistas da área da saúde. Foco em alimentos regionais como cuscuz e macaxeira para prevenção de diabetes e colesterol.">
+    <meta name="keywords" content="dieta econômica, cuscuz, macaxeira, cardápio para plantão, prevenção diabetes, plano alimentar, enfermagem">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#inicio" class="logo">Dieta Prática</a>
+        <div class="hamburger-menu" id="hamburger">
+            <i data-feather="menu"></i>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio 14 dias</a>
+            <a href="#plantoes">Para plantões</a>
+            <a href="#lista-compras">Lista de compras</a>
+            <a href="#dicas">Dicas econômicas</a>
+            <a href="#calculadora-tmb">Calculadora TMB</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Plano Alimentar Prático e Econômico para Profissionais de Saúde</h1>
+            <p>Baixo em açúcar e sal · com cuscuz, macaxeira e ovos · adaptado para plantões de 12h</p>
+            <div class="hero-ctas">
+                <a href="#" class="cta-button primary-cta" onclick="window.print(); return false;">Baixar/Imprimir Cardápio</a>
+                <a href="#dicas" class="cta-button secondary-cta">Ver dicas econômicas</a>
+            </div>
+        </section>
+
+        <section id="cardapio">
+            <div class="container">
+                <h2>Cardápio Cíclico - 14 dias</h2>
+                <p>Um plano completo para duas semanas. Clique em um dia para ver os detalhes.</p>
+                
+                <div class="accordion-container">
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 1: Segunda (Plantão)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café (Pré-Plantão):</strong> Cuscuz, ovo mexido, banana.</li><li><strong>Lanche 1 (No Trabalho):</strong> Maçã, amendoins.</li><li><strong>Almoço (Marmita):</strong> Arroz, feijão, frango desfiado, salada em pote.</li><li><strong>Lanche 2 (No Trabalho):</strong> Pão integral com queijo branco.</li><li><strong>Jantar (Pós-Plantão):</strong> Sopa leve de legumes com frango.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 2: Terça (Folga)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café:</strong> Tapioca com queijo coalho, café com leite.</li><li><strong>Lanche:</strong> Laranja.</li><li><strong>Almoço:</strong> Peixe grelhado, macaxeira cozida, salada fresca.</li><li><strong>Lanche:</strong> Banana amassada com aveia.</li><li><strong>Jantar:</strong> Cuscuz com carne moída e legumes.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 3: Quarta (Plantão)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café (Pré-Plantão):</strong> Vitamina de abacate.</li><li><strong>Lanche 1 (No Trabalho):</strong> Pote com mamão em cubos.</li><li><strong>Almoço (Marmita):</strong> Arroz, feijão, carne moída (sobra do dia 2).</li><li><strong>Lanche 2 (No Trabalho):</strong> Iogurte natural, castanhas.</li><li><strong>Jantar (Pós-Plantão):</strong> Omelete com queijo e tomate, salada.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 4: Quinta (Folga)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café:</strong> Cuscuz com ovos e queijo.</li><li><strong>Lanche:</strong> Maçã.</li><li><strong>Almoço:</strong> Frango guisado com legumes, arroz, feijão.</li><li><strong>Lanche:</strong> Tapioca com manteiga.</li><li><strong>Jantar:</strong> Sopa de feijão com legumes.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 5: Sexta (Plantão)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café (Pré-Plantão):</strong> Pão integral com 2 ovos mexidos.</li><li><strong>Lanche 1 (No Trabalho):</strong> Banana.</li><li><strong>Almoço (Marmita):</strong> Arroz, frango guisado desfiado (sobra do dia 4).</li><li><strong>Lanche 2 (No Trabalho):</strong> Mix de castanhas.</li><li><strong>Jantar (Pós-Plantão):</strong> Salada completa com ovo cozido e atum.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 6: Sábado (Folga)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café:</strong> Tapioca com ovo, suco de laranja.</li><li><strong>Lanche:</strong> Abacaxi.</li><li><strong>Almoço:</strong> Purê de macaxeira, carne de panela desfiada, salada.</li><li><strong>Lanche:</strong> Fatia de bolo de milho simples.</li><li><strong>Jantar:</strong> Sopa de jerimum com frango.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 7: Domingo (Plantão)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café (Pré-Plantão):</strong> Cuscuz com queijo, café.</li><li><strong>Lanche 1 (No Trabalho):</strong> Maçã.</li><li><strong>Almoço (Marmita):</strong> Macarronada com carne de panela (sobra do dia 6).</li><li><strong>Lanche 2 (No Trabalho):</strong> Sanduíche com patê de frango caseiro.</li><li><strong>Jantar (Pós-Plantão):</strong> Sopa leve de legumes.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 8: Segunda (Folga)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café:</strong> Pão integral com ricota e tomate.</li><li><strong>Lanche:</strong> Uvas.</li><li><strong>Almoço:</strong> Strogonoff de frango saudável (com creme de ricota), arroz e salada.</li><li><strong>Lanche:</strong> Tapioca com banana e canela.</li><li><strong>Jantar:</strong> Caldo de macaxeira com carne seca (charque).</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 9: Terça (Plantão)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café (Pré-Plantão):</strong> Cuscuz com ovo, café.</li><li><strong>Lanche 1 (No Trabalho):</strong> Maçã.</li><li><strong>Almoço (Marmita):</strong> Arroz, strogonoff (sobra do dia 8), brócolis.</li><li><strong>Lanche 2 (No Trabalho):</strong> Sanduíche com patê de atum.</li><li><strong>Jantar (Pós-Plantão):</strong> Sopa de legumes.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 10: Quarta (Folga)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café:</strong> Vitamina de mamão com aveia.</li><li><strong>Lanche:</strong> Laranja.</li><li><strong>Almoço:</strong> Carne moída com purê de batata doce, feijão e salada.</li><li><strong>Lanche:</strong> Iogurte com mel.</li><li><strong>Jantar:</strong> Omelete recheado com frango e queijo.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 11: Quinta (Plantão)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café (Pré-Plantão):</strong> Tapioca com queijo coalho.</li><li><strong>Lanche 1 (No Trabalho):</strong> Pera.</li><li><strong>Almoço (Marmita):</strong> Arroz, carne moída (sobra do dia 10), salada de pote.</li><li><strong>Lanche 2 (No Trabalho):</strong> Pão integral com queijo.</li><li><strong>Jantar (Pós-Plantão):</strong> Cuscuz com sardinha e tomate.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 12: Sexta (Folga)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café:</strong> Cuscuz com coco, café com leite.</li><li><strong>Lanche:</strong> Manga.</li><li><strong>Almoço:</strong> Baião de dois (versão leve), bife acebolado, salada.</li><li><strong>Lanche:</strong> Bolo de fubá simples.</li><li><strong>Jantar:</strong> Crepioca (tapioca + ovo) com recheio de queijo e tomate.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 13: Sábado (Plantão)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café (Pré-Plantão):</strong> Pão integral com ovo.</li><li><strong>Lanche 1 (No Trabalho):</strong> Banana.</li><li><strong>Almoço (Marmita):</strong> Baião de dois (sobra do dia 12), ovo cozido.</li><li><strong>Lanche 2 (No Trabalho):</strong> Iogurte natural.</li><li><strong>Jantar (Pós-Plantão):</strong> Sopa de feijão.</li></ul></div></div>
+                    <div class="accordion-item"><button class="accordion-header"><h3>Dia 14: Domingo (Folga)</h3><span class="icon">+</span></button><div class="accordion-content"><ul><li><strong>Café:</strong> Macaxeira cozida com manteiga, café.</li><li><strong>Lanche:</strong> Melancia.</li><li><strong>Almoço (Refeição Livre):</strong> Galinhada ou peixe assado, arroz, feijão, salada.</li><li><strong>Lanche:</strong> Salada de frutas.</li><li><strong>Jantar:</strong> Sanduíche natural leve.</li></ul></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plantoes" class="content-section">
+            <div class="container">
+                <h2>Adaptando para plantões 7h-19h</h2>
+                <p>Estrutura de refeições (café 6h, lanche 9-10h, almoço 12-13h, lanche 16-17h, jantar 19:30-20:30, ceia opcional). Dicas de embalagem: potes herméticos, manter saladas separadas e temperar no trabalho, aquecer cuscuz/ovos no micro-ondas.</p>
+                <div class="marmitas-grid">
+                    <div class="marmita-card">
+                        <h3>Marmita Econômica A</h3>
+                        <ul>
+                            <li>Cuscuz (4 colheres de sopa)</li>
+                            <li>Ovo mexido (2) ou frango desfiado (100g)</li>
+                            <li>Salada simples (alface, tomate)</li>
+                            <li>Fruta (ex: Banana)</li>
+                        </ul>
+                    </div>
+                    <div class="marmita-card">
+                        <h3>Marmita Econômica B</h3>
+                        <ul>
+                            <li>Arroz (3 colheres de sopa)</li>
+                            <li>Feijão (1 concha)</li>
+                            <li>Macaxeira cozida pequena</li>
+                            <li>Sardinha em lata ou frango grelhado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lista-compras">
+            <div class="container">
+                <h2>Lista de compras semanal (econômica)</h2>
+                <p>Marque os itens que você já tem ou comprou.</p>
+                <ul>
+                    <li><label><input type="checkbox"> <span>Cuscuz de milho 500g</span></label></li>
+                    <li><label><input type="checkbox"> <span>Arroz 1kg</span></label></li>
+                    <li><label><input type="checkbox"> <span>Feijão 1kg</span></label></li>
+                    <li><label><input type="checkbox"> <span>Macaxeira 1kg</span></label></li>
+                    <li><label><input type="checkbox"> <span>Ovos 20 unidades</span></label></li>
+                    <li><label><input type="checkbox"> <span>Frango 1kg (coxa/sobrecoxa)</span></label></li>
+                    <li><label><input type="checkbox"> <span>Banana, maçã, laranja, mamão</span></label></li>
+                    <li><label><input type="checkbox"> <span>Alface, tomate, cenoura, chuchu</span></label></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="dicas" class="content-section">
+            <div class="container">
+                <h2>Dicas para economizar e preparar</h2>
+                <ul>
+                    <li>Comprar em feiras locais, aproveitando frutas e legumes da estação.</li>
+                    <li>Cozinhar feijão e frango em lote e congelar porções individuais para a semana.</li>
+                    <li>Aproveitar sobras do almoço para rechear o cuscuz ou tapioca do jantar.</li>
+                    <li>Substituir iogurtes caros por leite com aveia e uma fruta.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="calculadora-tmb">
+            <div class="container">
+                <h2>Calculadora de Metabolismo Basal (TMB)</h2>
+                <p>Estime quantas calorias seu corpo gasta em repouso. Use como uma referência inicial.</p>
+                <div class="calculator-wrapper">
+                    <form id="tmb-form">
+                        <div class="form-group">
+                            <label>Gênero</label>
+                            <div class="gender-group">
+                                <label><input type="radio" name="gender" value="female" checked> Feminino</label>
+                                <label><input type="radio" name="gender" value="male"> Masculino</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Idade (anos)</label>
+                            <input type="number" id="age" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Peso (kg)</label>
+                            <input type="number" id="weight" step="0.1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="height">Altura (cm)</label>
+                            <input type="number" id="height" required>
+                        </div>
+                        <button type="submit" class="cta-button primary-cta" style="width: 100%;">Calcular TMB</button>
+                    </form>
+                    <div id="tmb-result" class="hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="content-section">
+            <div class="container">
+                <h2>Sobre o plano</h2>
+                <p>Este é um plano alimentar preventivo e educativo, focado em alimentos acessíveis. Ele não constitui diagnóstico médico nem substitui uma consulta individual. Recomenda-se procurar um nutricionista para um ajuste personalizado, especialmente caso haja diabetes, hipertensão ou colesterol alto já diagnosticado.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="legal">Isento de responsabilidade - Informações educativas. Consulte um profissional de saúde.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+        </div>
+        <p>Contato: <a href="mailto:contato@dietapratica.example">contato@dietapratica.example</a> | Instagram: @xlecrew</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
